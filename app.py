@@ -1,5 +1,4 @@
 import tensorflow as tf
-from tensorflow.keras.models import load_model
 import streamlit as st
 import numpy as np
 from PIL import Image
@@ -65,7 +64,7 @@ st.markdown("""
 st.header('Image Classification Model 🍏')
 
 # Load the model
-model = load_model(r'B:/Harsha/Praxis/Image classification/Code/Image_classify.keras')
+model = tf.keras.models.load_model(r'B:/Harsha/Praxis/Image classification/Code/Image_classify.keras')
 
 # List of categories for classification
 data_cat = [
